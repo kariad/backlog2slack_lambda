@@ -1,0 +1,17 @@
+{
+  "name": "backlog-lambda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "@types/slack-node": "^0.1.2",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.15",
+    "prettier": "^1.15.3",
+    "slack-node": "^0.1.8",
+    "tslint": "^5.11.0"
+  }
+}
