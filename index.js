@@ -14,8 +14,8 @@ var BacklogType = {
 function createDescription(event) {
     switch (event.type) {
         case 1:
-        case 2:
             return event.content.description;
+        case 2:
         case 3:
             return event.content.comment.content;
         default:
@@ -40,6 +40,11 @@ function handler(event, context, callback) {
             {
                 "title": "更新者",
                 "value": event.createdUser.name,
+                "short": true
+            },
+            {
+                "title": "課題のステータス",
+                "value": event.content.status.name,
                 "short": true
             },
             {

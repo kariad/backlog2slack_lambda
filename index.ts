@@ -21,8 +21,8 @@ const BacklogType: { [key: number]: string} = {
 function createDescription(event: any): string {
     switch (event.type) {
         case 1:
-        case 2:
             return event.content.description
+        case 2:
         case 3:
             return event.content.comment.content
         default:
@@ -49,6 +49,11 @@ export function handler(event: any, context: Context, callback: Callback) {
             {
                 "title": "更新者",
                 "value": event.createdUser.name,
+                "short": true
+            },
+            {
+                "title": "課題のステータス",
+                "value": event.content.status.name,
                 "short": true
             },
             {
