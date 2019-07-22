@@ -4,14 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^10.12.12",
+    "@types/node": "^12.6.8",
     "@types/slack-node": "^0.1.2",
-    "typescript": "^3.2.2"
+    "typescript": "^3.5.3"
   },
   "dependencies": {
-    "@types/aws-lambda": "^8.10.15",
-    "prettier": "^1.15.3",
+    "@types/aws-lambda": "^8.10.30",
+    "prettier": "^1.18.2",
     "slack-node": "^0.1.8",
-    "tslint": "^5.11.0"
+    "tslint": "^5.18.0"
   }
 }
